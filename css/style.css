@@ -1,17 +1,25 @@
 .border{
     border: 2px solid rgb(202, 7, 7);
 }
+body{
+    margin: 0;
+}
 .grid-container{
+      margin: 0;
     display: grid;
+
     grid-template-areas:
-        "nav header "
-        "nav main "
-        "nav footer ";
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 200px 1fr 150px;
+        "nav header header "
+        "nav main main"
+        "nav footer footer";
+    grid-template-rows: 0.2fr 0.6fr 0.2fr;
+    grid-template-columns: 1fr 2fr 2fr;
     height: 100vh;
+    margin: 10px;
+    gap: 0px
 }
 .nav{
+      margin: 0;
     min-height: 100vh;
     width: 20vw;
     min-width: 150px;
@@ -19,11 +27,52 @@
     grid-area: nav;
 }
 .header{
+    margin: 0;
+    height: 20vh;
+    width: auto;
     grid-area: header;
 }
 .main{
+      margin: 0;
+    min-height: 60vh;
+    width: auto;
     grid-area: main;
 }
 .footer{
+      margin: 0;
+    width: auto;
+    height: 20vh;   
     grid-area: footer;
+}
+@media  screen and (max-width: 650px) {
+     .grid-container{
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+        grid-template-rows: 0.2fr 0.6fr 0.2fr;
+        grid-template-columns: 1fr;
+    } 
+    .nav{
+       display: none;
+    }
+    h1{
+          margin:0;
+        font-size: 1.5em;
+    }
+    h2{
+          margin:0;
+        font-size: 1.2em;
+    }
+  p{
+        margin:0;
+    }
+}
+
+@media print
+{
+   .border{
+    border-style: dashed;
+    border : dashed  1px black;
+   }
 }
