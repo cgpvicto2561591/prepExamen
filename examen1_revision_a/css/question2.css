@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 html, body {
+    font-family: Roboto, sans-serif;
     margin:0;
     padding:0;
 }
@@ -22,3 +25,30 @@ table {
 }
 
 /** Insérez votre CSS en dessous de ce commentaire **/ 
+table, th, td {
+    text-align: center;
+    border: 2px dotted #001591;
+    border-collapse: collapse;
+    padding: 10px;
+    
+}
+table, th {
+   padding: 5px;
+}
+table, td {
+    padding: 15px;
+}
+img {
+    width: 350px;
+    height: auto;
+   animation: fadein 5s; /* Applique l'animation de fondu en entrée sur 2 secondes */
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0; /* L'élément est invisible au départ */
+  }
+  to {
+    opacity: 1; /* L'élément est complètement visible à la fin */
+  }
+}
