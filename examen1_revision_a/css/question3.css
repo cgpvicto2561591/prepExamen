@@ -1,4 +1,7 @@
 html, body {
+    background-image: url(https://preview.redd.it/ixsv8wft6gc81.png?width=239&format=png&auto=webp&s=537b27371ec74a2812f3b0ea625fe95eaad50a27);
+    background-size: 50%;
+    background-position: left;
     margin:0;
     width: 100%;
     height:100%;
@@ -20,12 +23,48 @@ html, body {
 }
 
 #zone_jeu {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    
     width: 800px;
     height: 690px;
     background-image: url('../img/Jeu_Connect4_vide.PNG');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     padding:20px;
+
+}
+ 
+/** Insérez votre CSS en dessous de ce commentaire **/ 
+#colonnes {
+    display: flex;
+    justify-content: space-around;
+    width: 800px;
+    flex-direction: row;
+    padding-left: 0px;
+    padding-right: 0px;
+    gap: 10px;
 }
 
-/** Insérez votre CSS en dessous de ce commentaire **/ 
+ #rouge1 { order: 2; }
+#rouge2 { order: 3; }
+#rouge3 { order: 4; 
+     transform:translate(-350px, -5px);
+}
+#rouge4 { order: 5; 
+     transform:translate(-575px, -5px);
+}
+
+#jaune1 { order: 1;
+    transform:translate(120px, -120px);
+ }
+#jaune2 { order: 1;
+     transform:translate(120px, -120px)
+ }
+#jaune3 { order: 1; 
+     transform:translate(120px, -120px)
+}
+
