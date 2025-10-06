@@ -1,6 +1,6 @@
 html, body {
-    background-image: url(https://preview.redd.it/ixsv8wft6gc81.png?width=239&format=png&auto=webp&s=537b27371ec74a2812f3b0ea625fe95eaad50a27);
-    background-size: 50%;
+   /* background-image: url(https://preview.redd.it/ixsv8wft6gc81.png?width=239&format=png&auto=webp&s=537b27371ec74a2812f3b0ea625fe95eaad50a27);
+    background-size: 50%;*/
     background-position: left;
     margin:0;
     width: 100%;
@@ -67,4 +67,15 @@ html, body {
 #jaune3 { order: 1; 
      transform:translate(120px, -120px)
 }
-
+.colonne{
+    
+    margin: 40px;
+    transform:scale(3);
+}
+.colonne:hover{
+    transform: translate(0px,20px) scale(3);
+    transition: transform 250ms ease;
+}
+.fleche:hover{
+    text-shadow: #0202ef 1px 0 10px;
+}
